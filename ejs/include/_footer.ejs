@@ -1,0 +1,11 @@
+<footer></footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="<%= data.rootPath %>assets/js/lib.js"></script>
+<script src="<%= data.rootPath %>assets/js/main.js"></script>
+<% if (typeof data.otherScript !== 'undefined') { -%>
+  <% data.otherScript.forEach(function (value, key) { -%>
+    <script src="<%= data.rootPath %>assets/js/<%= value %>"></script>
+  <% }); -%>
+<% } -%>
+</body>
+</html>

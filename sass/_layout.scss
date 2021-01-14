@@ -1,0 +1,13 @@
+/* group name */
+.l_container{
+    width: $width_container_total;
+    padding: 0 $padding_container;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    box-sizing: border-box;
+    @include sp{
+        width: 100%;
+        
+    }
+}

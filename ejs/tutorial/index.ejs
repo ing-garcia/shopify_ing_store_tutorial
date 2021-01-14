@@ -1,0 +1,12 @@
+<%
+var data = {
+  rootPath:filename.replace(/(.*)[\/|\\]ejs/,'').replace(/[\/|\\]\w+(.ejs)?/g,'../').substr(3),
+  filePath: filename.replace(/(.*)\/ejs/,'').replace(/\.ejs/,'.html'),
+  title:'Tutorial Contents',
+  topFlag:true,
+  otherScript:['top.js']
+}
+-%>
+<%- include(data.rootPath + 'include/_head',{data:data}) -%>
+
+<%- include(data.rootPath + 'include/_footer',{data:data}) -%>

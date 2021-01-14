@@ -1,0 +1,54 @@
+html, body, div,object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video,input,textarea {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-weight:normal;
+  font-style:normal;
+  font-size:14px;
+  box-sizing:border-box;
+  @include sp() {
+    font-size: 12px;
+  }
+}
+body{
+  font-family: $base_fonts;
+  line-height:1.6;
+  color:$color_black;
+  -webkit-text-size-adjust:100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+img{
+  text-decoration:none;
+  vertical-align:top;
+  font-size:0px;
+}
+
+article,aside,main,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+  box-sizing:border-box
+}
+
+ol,ul{list-style:none;}
+
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+a{
+  box-sizing:border-box;
+  outline:none;
+}
+p{color:$color_black;}
