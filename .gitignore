@@ -1,5 +1,7 @@
 *.html
 *.css.map
+.env
 lib.js
 validation-report.json
 lint
+.next

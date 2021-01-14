@@ -4,9 +4,9 @@ const $ = require('gulp-load-plugins')();
 const fs = require('fs');
 const del = require('del');
 const path = require('path');
-const webpack = require('webpack');
-const webpackStream = require('webpack-stream');
-const webpackConfig = require('./webpack.config');
+// const webpack = require('webpack');
+// const webpackStream = require('webpack-stream');
+// const webpackConfig = require('./webpack.config');
 const eslintReporter = require('eslint-html-reporter');
 const today = {};
 today.date = new Date();
@@ -33,9 +33,9 @@ const filePath = {
     htmlLintTemplate: 'lint/assets/w3c_report.ejs'
   },
   ejs: {
-    all: 'ejs/**/*.ejs',
-    html: ['ejs/**/*.ejs', '!' + 'ejs/**/_*.ejs', '!' + 'ejs/**/*_php.ejs'],
-    php: 'ejs/**/*_php.ejs'
+    all: 'pages/**/*.ejs',
+    html: ['pages/**/*.ejs', '!' + 'pages/**/_*.ejs', '!' + 'pages/**/*_php.ejs'],
+    php: 'pages/**/*_php.ejs'
   },
   other: {
     dist: 'dist/',
@@ -126,11 +126,11 @@ gulp.task('concat', () => {
     .pipe(gulp.dest(filePath.script.out));
 });
 
-gulp.task('babel', () => {
-  return webpackStream(webpackConfig, webpack).pipe(
-    gulp.dest(filePath.script.out)
-  );
-});
+// gulp.task('babel', () => {
+//   return webpackStream(webpackConfig, webpack).pipe(
+//     gulp.dest(filePath.script.out)
+//   );
+// });
 
 gulp.task('clean', () => {
   return del(filePath.other.dust);

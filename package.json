@@ -1,17 +1,13 @@
 {
-  "name": "html_template",
+  "name": "shopify_text_page",
   "version": "1.0.2",
   "description": "template",
   "main": "none",
-  "babel": {
-    "plugins": [
-      "transform-runtime"
-    ],
-    "ignore": [
-      "node_modules"
-    ]
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
-  "scripts": {},
   "repository": "none",
   "keywords": [
     "none"
@@ -19,8 +15,6 @@
   "author": "none",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-plugin-transform-runtime": "^6.23.0",
     "bulma": "^0.7.5",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
@@ -32,9 +26,6 @@
     "rfs": "^8.0.4"
   },
   "dependencies": {
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-runtime": "^6.26.0",
     "del": "^3.0.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-html-reporter": "^0.7.4",
@@ -43,7 +34,6 @@
     "eslint-plugin-react": "^7.18.3",
     "fs": "^0.0.1-security",
     "glob": "^7.1.6",
-    "gulp-babel": "^7.0.1",
     "gulp-cached": "^1.1.1",
     "gulp-data": "^1.3.1",
     "gulp-html-beautify": "^1.0.1",
@@ -53,10 +43,10 @@
     "gulp-sass-partials-imported": "^1.0.7",
     "gulp-w3c-html-validation": "^0.0.1",
     "gulp-zip": "^4.2.0",
+    "next": "^10.0.5",
     "path": "^0.12.7",
     "prettier": "^1.19.1",
-    "vue-slide-up-down": "^1.6.0",
-    "webpack": "^4.42.0",
-    "webpack-stream": "^4.0.3"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
